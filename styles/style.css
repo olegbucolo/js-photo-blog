@@ -9,6 +9,12 @@ font-family: "Tangerine", cursive;
     box-sizing: border-box;
 }
 
+ul:not(.row){
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .h1-title{
     font-size: 3rem;
     height: 6rem;
@@ -19,11 +25,43 @@ font-family: "Tangerine", cursive;
     font-style: italic;
 }
 
-.ul-cards{
-    background-color: red;
+img{
+    width: 100%
+}
+
+body{
+    background-image: url('../imgs/cork.png')
+
+}
+
+.sec-main{
+    width: 100%;
+
+}
+
+.li-card{
+    position: relative !important;
+}
+
+.li-card::before{
+    position: absolute !important;
+    content: "";
+    background-image: url("../imgs/pin.svg");
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2rem;
+    height: 2rem;
+    z-index: 2;
 }
 
 .p-card{
     font-family: "Tangerine", cursive;
+
+}
+
+.card{
+    /* background-color: white; */
+    padding: 2rem;
 
 }
