@@ -31,12 +31,10 @@ img{
 
 body{
     background-image: url('../imgs/cork.png')
-
 }
 
 .sec-main{
     width: 100%;
-
 }
 
 .li-card{
@@ -44,6 +42,7 @@ body{
 }
 
 .li-card::before{
+    border-radius: 5rem;
     position: absolute !important;
     content: "";
     background-image: url("../imgs/pin.svg");
@@ -57,11 +56,8 @@ body{
 
 .p-card{
     font-family: "Tangerine", cursive;
-
 }
 
 .card{
-    /* background-color: white; */
     padding: 2rem;
-
 }
