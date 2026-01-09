@@ -39,11 +39,13 @@ function toggleOverlay() {
     if (imgOverlay.classList.contains('d-none')) {
         imgOverlay.classList.remove('d-none');
         imgOverlay.classList.add('d-flex');
+        document.body.style.overflow = 'hidden';
 
     } else {
         imgOverlay.classList.remove('d-flex');
         imgOverlay.classList.add('d-none');
+        document.body.style.overflow = 'auto';
     }
     // imgOverlay.classList.toggle('d-none');
-    document.body.style.overflow = 'hidden';
+    
 }
