@@ -63,6 +63,7 @@ body {
 }
 
 .li-card .card:hover {
+    cursor: pointer;
     transition: all .6s ease-in-out;
     box-shadow: .5rem .5rem 5rem .1rem black;
     transform: rotate(10deg) scale(105%);
