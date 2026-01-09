@@ -39,6 +39,8 @@ body{
 
 .li-card{
     position: relative !important;
+    transform: rotate(0);
+    transition: transform .4s ease;
 }
 
 .li-card::before{
@@ -52,6 +54,13 @@ body{
     width: 2rem;
     height: 2rem;
     z-index: 2;
+    
+
+}
+
+.li-card:hover{
+    transition: transform .4s ease;
+    transform: rotate(10deg);
 }
 
 .p-card{
