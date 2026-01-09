@@ -37,13 +37,19 @@ body {
     width: 100%;
 }
 
-.li-card {
+.li-card .card {
     position: relative !important;
-    transform: rotate(0);
-    transition: transform .4s ease;
+    
 }
 
-.li-card::before {
+.li-card .card{
+    transform: rotate(0) scale(100%);
+    box-shadow: 0 0 0 0 black;
+
+    transition: all .6s ease-in-out;
+}
+
+.li-card .card::before {
     border-radius: 5rem;
     position: absolute !important;
     content: "";
@@ -56,9 +62,11 @@ body {
     z-index: 2;
 }
 
-.li-card:hover {
-    transition: transform .4s ease;
-    transform: rotate(10deg);
+.li-card .card:hover {
+    transition: all .6s ease-in-out;
+    box-shadow: .5rem .5rem 5rem .1rem black;
+    transform: rotate(10deg) scale(105%);
+    z-index: 2;
 }
 
 .p-card {
